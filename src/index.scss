@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800');
+
+@import './styles/reset.scss';
+@import './styles/variables.scss';
+@import './styles/breakpoints.scss';
+@import './styles/common.scss';
+@import './styles/header.scss';
+@import './styles/main.scss';
+@import './styles/footer.scss';
+
+html,
+body {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  height: 100%;
+}
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: #e7efec;
+}
+
+[class*='__container'] {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  @include for-mobile {
+    padding: 0px 15px;
+  }
+}
+
+.page {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1 1 auto;
+}

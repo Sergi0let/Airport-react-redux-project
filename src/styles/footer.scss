@@ -1,0 +1,117 @@
+.footer {
+  flex: 0 1 100%;
+  background: #595959;
+  color: #fff;
+  padding: 0px 15px;
+  @include for-mobile {
+    padding: 0px 0px;
+  }
+}
+.footer-top {
+  @include for-mobile {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 1px solid #b6c0be;
+  }
+  &__item {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #b6c0be;
+    @include for-mobile {
+      border-bottom: none;
+    }
+  }
+
+  &__title {
+    padding-bottom: 20px;
+    font-weight: 700;
+  }
+
+  &__list {
+    display: none;
+    @include for-mobile {
+      display: block;
+    }
+  }
+
+  &__link {
+    display: block;
+    line-height: 120%;
+    padding-bottom: 20px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__telephone {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 160%;
+    transition: color 0.3s ease 0s;
+    &:hover {
+      color: #b6c0be;
+    }
+  }
+
+  &__socials {
+    font-size: 32px;
+    padding: 10px 0px;
+  }
+
+  &__social {
+    margin-right: 20px;
+    transition: color 0.3s ease 0s;
+    &:hover {
+      color: #b6c0be;
+    }
+  }
+}
+
+.footer-bottom {
+  padding-bottom: 16px;
+  padding-top: 16px;
+  color: #b6c0be;
+  @include for-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    @include for-mobile {
+      display: flex;
+      gap: 50px;
+    }
+  }
+
+  &__column {
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  &__text {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 34px;
+    left: 150px;
+    top: 15px;
+    @include for-mobile {
+      right: -45px;
+      top: 12px;
+    }
+  }
+
+  &__signature {
+    color: #fff;
+  }
+  &__text {
+    &_color {
+      color: #b6c0be;
+    }
+  }
+}

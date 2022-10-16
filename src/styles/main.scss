@@ -1,0 +1,439 @@
+.main {
+  flex: 1 1 auto;
+}
+
+.search-reise {
+  display: flex;
+  margin: 20px 0px;
+
+  &__block {
+    width: 100%;
+    @include for-tablet {
+      width: auto;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    @include for-mobile {
+      font-size: 50px;
+    }
+    @include for-tablet {
+      font-size: 70px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    @include for-tablet {
+      width: 780px;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 5px 5px 5px 90px;
+    font-size: 21px;
+    background: url('https://www.cliparts101.com/files/400/B42B29F598C76965F60D1020F63CF989/search_Icon_Light_Grey.png')
+      no-repeat 3px 1px;
+    background-color: #fff;
+    background-size: auto 100%;
+
+    @include for-tablet {
+      width: 70%;
+    }
+  }
+
+  &__submit {
+    display: none;
+    width: 30%;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    background: #1eb7ee;
+    border-radius: 0 80px 0 0;
+    transition: all 0.3s ease 0s;
+    @include for-tablet {
+      display: block;
+    }
+    &:hover {
+      border-radius: 0 45px 0 0;
+    }
+  }
+}
+//========================================================================================================================================================
+.fly-table {
+  margin-bottom: 20px;
+  &__navigation {
+    display: flex;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    flex: 1 1 50%;
+    height: 50px;
+    background: #1eb7ee;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px 30px 0 0;
+
+    &_departures {
+      justify-content: flex-start;
+      padding-left: 25px;
+      margin-right: -50px;
+    }
+    &_arrivals {
+      justify-content: flex-end;
+      padding-right: 25px;
+      margin-left: -50px;
+    }
+    @include for-mobile {
+      font-size: 21px;
+      border-radius: 60px 60px 0 0;
+      &_departures {
+        justify-content: flex-end;
+        padding-right: 120px;
+        margin-right: -50px;
+      }
+      &_arrivals {
+        justify-content: flex-start;
+        padding-left: 120px;
+        margin-left: -50px;
+      }
+    }
+  }
+}
+.active {
+  background-color: #fff;
+  color: #1eb7ee;
+  z-index: 1;
+}
+//========================================================================================================================================================
+
+.calendar-fly {
+  display: flex;
+  height: 110px;
+  padding: 20px 20px;
+  background-color: #fff;
+
+  &__current-date {
+    padding: 0px 2px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1eb7ee;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-left: 10px;
+    height: 75%;
+  }
+
+  &__toggle-date {
+    padding: 0px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #b1b6bf;
+    text-transform: uppercase;
+    border-bottom: 3px solid #b1b6bf;
+    background-color: #fff;
+    &:hover {
+      color: #1eb7ee;
+      border-color: #1eb7ee;
+    }
+  }
+
+  &__toggle-name {
+    font-weight: 700;
+    margin-top: 5px;
+  }
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  font-size: 30px;
+  filter: invert(100%);
+}
+input[type='date'] {
+  display: flex;
+  flex-direction: column;
+
+  background: #1eb7ee;
+  font-family: 'Open Sans';
+  color: #fff;
+  width: 40px;
+  height: 38px;
+}
+::-webkit-datetime-edit {
+  display: none;
+}
+
+//========================================================================================================================================================
+.board-table {
+  width: 100%;
+  min-height: 100%;
+  border-spacing: 0;
+  background: #fff;
+
+  &__header {
+    line-height: 60px;
+    color: #b1b6bf;
+    text-align: left;
+
+    tr {
+      display: none;
+      @include for-mobile {
+        display: table-row;
+      }
+      th {
+        &:first-child {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  &__body {
+  }
+}
+.table-body {
+  font-size: 14px;
+  @include for-mobile {
+    font-size: 18px;
+  }
+
+  &__terminal {
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #63c745;
+    border: 2px solid #63c745;
+    border-radius: 50%;
+    @include for-mobile {
+      display: flex;
+      margin-left: 20px;
+    }
+  }
+
+  &__img-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding-left: 5px;
+    @include for-mobile {
+      flex-direction: row;
+    }
+  }
+
+  &__img {
+    width: 37px;
+    @include for-mobile {
+      width: 67px;
+    }
+  }
+
+  &__link {
+    display: none;
+    color: #1eb7ee;
+    font-size: 16px;
+    text-decoration: underline;
+    visibility: hidden;
+    @include for-mobile {
+      display: block;
+    }
+  }
+  td {
+    max-width: 100px;
+    padding: 0px 5px;
+  }
+  th,
+  tr {
+    position: relative;
+    width: auto;
+    height: 73px;
+    text-align: left;
+    z-index: 1;
+
+    &:hover {
+      box-shadow: 0px 14px 19px -8px rgba(0, 0, 0, 0.75);
+      .table-body__link {
+        visibility: visible;
+      }
+    }
+
+    &:nth-child(even) {
+      background: rgba(229, 239, 243, 0.781);
+    }
+  }
+}
+
+.noflight {
+  width: 100%;
+  font-size: 45px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  background: #fff;
+}
+
+//========================================================================================================================================================
+
+// .tabs-nav {
+//   display: flex;
+//   margin: 0 auto;
+//   @include for-mobile {
+//     max-width: 600px;
+//   }
+//   @include for-tablet {
+//     max-width: 1170px;
+//   }
+//   &__item {
+//     display: flex;
+//     align-items: center;
+//     height: 60px;
+//     font-weight: 600;
+//     font-size: 18px;
+//     text-transform: uppercase;
+//     transition: all 0.3s ease 0s;
+//     &:first-child {
+//       border-radius: 0px 30px 0 0;
+//     }
+//     @include for-mobile {
+//       border-radius: 50px 50px 0 0;
+//       &:first-child {
+//         border-radius: 50px 50px 0 0;
+//       }
+//     }
+
+//     &_derived {
+//       z-index: 1;
+//       justify-content: flex-end;
+//       padding-right: 20px;
+//       margin-right: -50px;
+//       width: 55%;
+//       background-color: #fff;
+//       color: #73d2f0;
+//       @include for-mobile {
+//         padding-right: 120px;
+//         width: 65%;
+//       }
+//     }
+//     &_arived {
+//       padding-right: 15px;
+//       margin-left: -50px;
+//       justify-content: flex-end;
+//       width: 75%;
+//       background-color: #73d2f0;
+//       color: #fff;
+//       .active {
+//         background-color: #1eb7ee;
+//       }
+//       @include for-mobile {
+//         justify-content: flex-start;
+//         padding-left: 120px;
+//         width: 65%;
+//       }
+//     }
+
+//     span {
+//       margin-right: 15px;
+//     }
+//   }
+
+//   &__icon {
+//   }
+// }
+// //========================================================================================================================================================
+
+// input[type='date']::-webkit-calendar-picker-indicator {
+//   font-size: 30px;
+//   filter: invert(100%);
+// }
+// input[type='date'] {
+//   display: flex;
+//   flex-direction: column;
+//   background: #1eb7ee;
+//   font-family: 'Open Sans';
+//   color: #fff;
+//   width: 40px;
+//   height: 38px;
+// }
+// ::-webkit-datetime-edit {
+//   display: none;
+// }
+
+// .tabs {
+//   &__board {
+//     display: flex;
+//     padding: 20px 10px;
+//     background-color: #fff;
+//   }
+
+//   &__calendars {
+//     margin-right: 10px;
+//     @include for-mobile {
+//       margin-right: 18px;
+//     }
+//   }
+//   &__calendars-date {
+//     color: #1eb7ee;
+//   }
+
+//   &__toggle-date-wrapper {
+//     display: flex;
+//   }
+
+//   &__toggle-date {
+//     display: flex;
+//     width: 85px;
+//     flex-direction: column;
+//     align-items: center;
+//     color: #b9b9b9;
+//     cursor: pointer;
+//     @include for-mobile {
+//       width: 100px;
+//     }
+//     &::after {
+//       content: '';
+//       width: 100%;
+//       height: 4px;
+//       background-color: #b8b9b9;
+//     }
+//     .active::after {
+//       background-color: #1eb7ee;
+//     }
+//     .active {
+//       color: #1eb7ee;
+//     }
+//   }
+
+//   &__toggle-number {
+//     font-size: 16px;
+//   }
+
+//   &__toggle-name {
+//     font-size: 18px;
+//     font-weight: 700;
+//     text-transform: uppercase;
+//     padding: 5px 0px;
+//     @include for-mobile {
+//       font-size: 14px;
+//     }
+//   }
+// }
