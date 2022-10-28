@@ -6,4 +6,12 @@
 
 ### Layout supports mobile from `320px` and desktop `1200px` versions.<br/>
 
-### **breakpoints** `990px & 768px`
+**breakpoints** `990px & 768px`
+
+### The tech stack is:
+
+- HTML5
+- SASS (SCSS)
+- BEM methodology
+- React 16
+- Redux, redux-thunk
