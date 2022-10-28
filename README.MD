@@ -8,7 +8,7 @@
 
 **breakpoints** `990px & 768px`
 
-### The tech stack is:
+### 💻 The tech stack is: u00f3n \00F7
 
 - HTML5
 - SASS (SCSS)
