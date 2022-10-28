@@ -1,4 +1,4 @@
-# Airport ticket table project
+# Airport ticket table project on **_React_**
 
 ![logo](https://upload.wikimedia.org/wikipedia/commons/b/bf/Kyiv_International_Airport_Logo.gif)
 
