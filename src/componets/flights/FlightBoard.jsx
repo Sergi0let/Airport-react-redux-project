@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { NavLink, Route, Switch } from 'react-router-dom';
+import { NavLink, Redirect, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
@@ -21,6 +21,7 @@ const FlightBoard = ({ fetchFlightList, flightDateSelector }) => {
       <Search />
       <section className="fly-table">
         <nav className="fly-table__navigation">
+          <Redirect to="/departure" />
           <NavLink
             to="/departure"
             className="fly-table__link fly-table__link_departures"
