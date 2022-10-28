@@ -17,7 +17,7 @@
 - Redux, redux-thunk
 - Javascript (ES6),
 
-### `npm start`
+`npm install npm start`
 
 ###### Description
 
