@@ -15,6 +15,9 @@
 - BEM methodology
 - React 16
 - Redux, redux-thunk
+- Javascript (ES6),
+
+### `npm start`
 
 ###### Description
 
