@@ -16,6 +16,6 @@
 - React 16
 - Redux, redux-thunk
 
-##### Description
+###### Description
 
 My implementation airport scoreboard. First, you will see the departing planes, and on the other tab, the arriving planes. You can also search by flight number. Also, having implemented the calendar functionality, you can choose the date of the flight, or switch tomorrow's or yesterday's flights. To receive polls, select a date before February 24. Because the planes don't fly now.
