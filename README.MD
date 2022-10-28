@@ -8,10 +8,14 @@
 
 **breakpoints** `990px & 768px`
 
-### 💻 The tech stack is: u00f3n \00F7
+### 💻 The tech stack is:
 
 - HTML5
 - SASS (SCSS)
 - BEM methodology
 - React 16
 - Redux, redux-thunk
+
+##### Description
+
+My implementation airport scoreboard. First, you will see the departing planes, and on the other tab, the arriving planes. You can also search by flight number. Also, having implemented the calendar functionality, you can choose the date of the flight, or switch tomorrow's or yesterday's flights. To receive polls, select a date before February 24. Because the planes don't fly now.
