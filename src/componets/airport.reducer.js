@@ -37,6 +37,3 @@ const airportReducer = (state = initialState, action) => {
 };
 
 export default airportReducer;
-// const updatedList = state.listFlights.filter((flight) =>
-//   flight.codeShareData[0].codeShare.includes(action.payload.reiseNum)
-// );
